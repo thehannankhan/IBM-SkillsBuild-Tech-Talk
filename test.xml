@@ -1,0 +1,6 @@
+curl -X POST -u "apikey:{apikey}" \
+--header "Content-Type: application/json" \
+--header "Accept: audio/wav" \
+--data "{\"text\":\"hello world\"}" \
+--output hello_world.wav \
+"{url}/v1/synthesize?voice=en-US_MichaelV3Voice"
